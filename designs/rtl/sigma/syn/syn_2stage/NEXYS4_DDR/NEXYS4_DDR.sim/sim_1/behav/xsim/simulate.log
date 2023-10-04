@@ -1,0 +1,29 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+WARNING: Insufficient data from the input file for $fread
+
+##################################
+#### Loading elf file: E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/sigma/sw/apps/sha256.riscv
+e_machine: 0x000000f3 (   RISC-V)
+e_phnum: 0x00000002
+---- HEADER: 0 ----
+p_type: 0x70000003
+p_offset: 0x00000c3e
+p_vaddr: 0x00000000
+p_paddr: 0x00000000
+p_filesz: 0x0000002e
+p_memsz: 0x00000000
+p_flags: 0x00000004
+p_align: 0x00000001
+---- HEADER: 1 ----
+p_type: 0x00000001
+p_offset: 0x00000000
+p_vaddr: 0x00000000
+p_paddr: 0x00000000
+p_filesz: 0x00000c2c
+p_memsz: 0x00000c4c
+p_flags: 0x00000007
+p_align: 0x00001000
+##################################
+
+### SIMULATION STARTED ###

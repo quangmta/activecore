@@ -1,0 +1,270 @@
+
+I-LH-01.riscv:     file format elf32-littleriscv
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text.init    000001c4  00000200  00000200  00000200  2**4
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000030  000003d0  000003d0  000003d0  2**4
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .io_buf       00000090  00006000  00006000  00001000  2**4
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  3 .riscv.attributes 0000001f  00000000  00000000  00001090  2**0
+                  CONTENTS, READONLY
+
+Disassembly of section .text.init:
+
+00000200 <_start>:
+ 200:	00006297          	auipc	t0,0x6
+ 204:	e0028293          	addi	t0,t0,-512 # 6000 <codasip_signature_start>
+ 208:	3e800f93          	li	t6,1000
+ 20c:	000f9003          	lh	zero,0(t6)
+ 210:	0002a023          	sw	zero,0(t0)
+ 214:	3e800f13          	li	t5,1000
+ 218:	ffef1083          	lh	ra,-2(t5)
+ 21c:	0012a223          	sw	ra,4(t0)
+ 220:	3e800e93          	li	t4,1000
+ 224:	002e9103          	lh	sp,2(t4)
+ 228:	0022a423          	sw	sp,8(t0)
+ 22c:	3e800e13          	li	t3,1000
+ 230:	ffce1183          	lh	gp,-4(t3)
+ 234:	0032a623          	sw	gp,12(t0)
+ 238:	3e800d93          	li	s11,1000
+ 23c:	002d9203          	lh	tp,2(s11)
+ 240:	0042a823          	sw	tp,16(t0)
+ 244:	00006097          	auipc	ra,0x6
+ 248:	dd008093          	addi	ra,ra,-560 # 6014 <test_2_res>
+ 24c:	3e800d13          	li	s10,1000
+ 250:	004d1283          	lh	t0,4(s10)
+ 254:	0050a023          	sw	t0,0(ra)
+ 258:	3e800c93          	li	s9,1000
+ 25c:	000c9303          	lh	t1,0(s9)
+ 260:	0060a223          	sw	t1,4(ra)
+ 264:	3e800c13          	li	s8,1000
+ 268:	000c1383          	lh	t2,0(s8)
+ 26c:	0070a423          	sw	t2,8(ra)
+ 270:	3e800b93          	li	s7,1000
+ 274:	000b9403          	lh	s0,0(s7)
+ 278:	0080a623          	sw	s0,12(ra)
+ 27c:	3e800b13          	li	s6,1000
+ 280:	ffeb1483          	lh	s1,-2(s6)
+ 284:	0090a823          	sw	s1,16(ra)
+ 288:	00006097          	auipc	ra,0x6
+ 28c:	da008093          	addi	ra,ra,-608 # 6028 <test_3_res>
+ 290:	3e800a93          	li	s5,1000
+ 294:	002a9503          	lh	a0,2(s5)
+ 298:	00a0a023          	sw	a0,0(ra)
+ 29c:	3e800a13          	li	s4,1000
+ 2a0:	ffca1583          	lh	a1,-4(s4)
+ 2a4:	00b0a223          	sw	a1,4(ra)
+ 2a8:	3e800993          	li	s3,1000
+ 2ac:	00299603          	lh	a2,2(s3)
+ 2b0:	00c0a423          	sw	a2,8(ra)
+ 2b4:	3e800913          	li	s2,1000
+ 2b8:	00491683          	lh	a3,4(s2)
+ 2bc:	00d0a623          	sw	a3,12(ra)
+ 2c0:	3e800893          	li	a7,1000
+ 2c4:	00089703          	lh	a4,0(a7)
+ 2c8:	00e0a823          	sw	a4,16(ra)
+ 2cc:	00006117          	auipc	sp,0x6
+ 2d0:	d7010113          	addi	sp,sp,-656 # 603c <test_4_res>
+ 2d4:	3e800813          	li	a6,1000
+ 2d8:	00081783          	lh	a5,0(a6)
+ 2dc:	00f12023          	sw	a5,0(sp)
+ 2e0:	3e800793          	li	a5,1000
+ 2e4:	00079803          	lh	a6,0(a5)
+ 2e8:	01012223          	sw	a6,4(sp)
+ 2ec:	3e800713          	li	a4,1000
+ 2f0:	ffe71883          	lh	a7,-2(a4)
+ 2f4:	01112423          	sw	a7,8(sp)
+ 2f8:	3e800693          	li	a3,1000
+ 2fc:	00269903          	lh	s2,2(a3)
+ 300:	01212623          	sw	s2,12(sp)
+ 304:	3e800613          	li	a2,1000
+ 308:	ffc61983          	lh	s3,-4(a2)
+ 30c:	01312823          	sw	s3,16(sp)
+ 310:	00006097          	auipc	ra,0x6
+ 314:	d4008093          	addi	ra,ra,-704 # 6050 <test_5_res>
+ 318:	3e800593          	li	a1,1000
+ 31c:	00259a03          	lh	s4,2(a1)
+ 320:	0140a023          	sw	s4,0(ra)
+ 324:	3e800513          	li	a0,1000
+ 328:	00451a83          	lh	s5,4(a0)
+ 32c:	0150a223          	sw	s5,4(ra)
+ 330:	3e800493          	li	s1,1000
+ 334:	00049b03          	lh	s6,0(s1)
+ 338:	0160a423          	sw	s6,8(ra)
+ 33c:	3e800413          	li	s0,1000
+ 340:	00041b83          	lh	s7,0(s0)
+ 344:	0170a623          	sw	s7,12(ra)
+ 348:	3e800393          	li	t2,1000
+ 34c:	00039c03          	lh	s8,0(t2)
+ 350:	0180a823          	sw	s8,16(ra)
+ 354:	00006097          	auipc	ra,0x6
+ 358:	d1008093          	addi	ra,ra,-752 # 6064 <test_6_res>
+ 35c:	3e800313          	li	t1,1000
+ 360:	ffe31c83          	lh	s9,-2(t1)
+ 364:	0190a023          	sw	s9,0(ra)
+ 368:	3e800293          	li	t0,1000
+ 36c:	00229d03          	lh	s10,2(t0)
+ 370:	01a0a223          	sw	s10,4(ra)
+ 374:	3e800213          	li	tp,1000
+ 378:	ffc21d83          	lh	s11,-4(tp) # fffffffc <_end+0xffff9f6c>
+ 37c:	01b0a423          	sw	s11,8(ra)
+ 380:	3e800193          	li	gp,1000
+ 384:	00219e03          	lh	t3,2(gp) # c02 <__global_pointer$+0x2>
+ 388:	01c0a623          	sw	t3,12(ra)
+ 38c:	3e800113          	li	sp,1000
+ 390:	00411e83          	lh	t4,4(sp)
+ 394:	01d0a823          	sw	t4,16(ra)
+ 398:	00006117          	auipc	sp,0x6
+ 39c:	ce010113          	addi	sp,sp,-800 # 6078 <test_7_res>
+ 3a0:	3e800093          	li	ra,1000
+ 3a4:	00009f03          	lh	t5,0(ra)
+ 3a8:	01e12023          	sw	t5,0(sp)
+ 3ac:	3e800093          	li	ra,1000
+ 3b0:	00009f83          	lh	t6,0(ra)
+ 3b4:	01f12223          	sw	t6,4(sp)
+
+000003b8 <halt>:
+ 3b8:	0000006f          	j	3b8 <halt>
+ 3bc:	0000                	unimp
+ 3be:	0000                	unimp
+ 3c0:	0000                	unimp
+ 3c2:	0000                	unimp
+
+Disassembly of section .data:
+
+000003d0 <test_data_start>:
+ 3d0:	f222                	fsw	fs0,36(sp)
+ 3d2:	11f1                	addi	gp,gp,-4
+ 3d4:	44f4                	lw	a3,76(s1)
+ 3d6:	f666f333          	0xf666f333
+ 3da:	55f5                	li	a1,-3
+ 3dc:	88f8                	0x88f8
+ 3de:	0aaaf777          	0xaaaf777
+ 3e2:	9909                	andi	a0,a0,-30
+ 3e4:	cc0c                	sw	a1,24(s0)
+ 3e6:	          	0xeee0bbb
+
+000003e8 <test_data>:
+ 3e8:	0eee                	slli	t4,t4,0x1b
+ 3ea:	dd0d                	beqz	a0,324 <_start+0x124>
+ 3ec:	00f0                	addi	a2,sp,76
+ 3ee:	0fff                	0xfff
+ 3f0:	5678                	lw	a4,108(a2)
+ 3f2:	1234                	addi	a3,sp,296
+ 3f4:	def0                	sw	a2,124(a3)
+ 3f6:	9abc                	0x9abc
+ 3f8:	3210                	fld	fa2,32(a2)
+ 3fa:	7654                	flw	fa3,44(a2)
+ 3fc:	ba98                	fsd	fa4,48(a3)
+ 3fe:	fedc                	fsw	fa5,60(a3)
+
+Disassembly of section .io_buf:
+
+00006000 <codasip_signature_start>:
+    6000:	ffff                	0xffff
+    6002:	ffff                	0xffff
+    6004:	ffff                	0xffff
+    6006:	ffff                	0xffff
+    6008:	ffff                	0xffff
+    600a:	ffff                	0xffff
+    600c:	ffff                	0xffff
+    600e:	ffff                	0xffff
+    6010:	ffff                	0xffff
+    6012:	ffff                	0xffff
+
+00006014 <test_2_res>:
+    6014:	ffff                	0xffff
+    6016:	ffff                	0xffff
+    6018:	ffff                	0xffff
+    601a:	ffff                	0xffff
+    601c:	ffff                	0xffff
+    601e:	ffff                	0xffff
+    6020:	ffff                	0xffff
+    6022:	ffff                	0xffff
+    6024:	ffff                	0xffff
+    6026:	ffff                	0xffff
+
+00006028 <test_3_res>:
+    6028:	ffff                	0xffff
+    602a:	ffff                	0xffff
+    602c:	ffff                	0xffff
+    602e:	ffff                	0xffff
+    6030:	ffff                	0xffff
+    6032:	ffff                	0xffff
+    6034:	ffff                	0xffff
+    6036:	ffff                	0xffff
+    6038:	ffff                	0xffff
+    603a:	ffff                	0xffff
+
+0000603c <test_4_res>:
+    603c:	ffff                	0xffff
+    603e:	ffff                	0xffff
+    6040:	ffff                	0xffff
+    6042:	ffff                	0xffff
+    6044:	ffff                	0xffff
+    6046:	ffff                	0xffff
+    6048:	ffff                	0xffff
+    604a:	ffff                	0xffff
+    604c:	ffff                	0xffff
+    604e:	ffff                	0xffff
+
+00006050 <test_5_res>:
+    6050:	ffff                	0xffff
+    6052:	ffff                	0xffff
+    6054:	ffff                	0xffff
+    6056:	ffff                	0xffff
+    6058:	ffff                	0xffff
+    605a:	ffff                	0xffff
+    605c:	ffff                	0xffff
+    605e:	ffff                	0xffff
+    6060:	ffff                	0xffff
+    6062:	ffff                	0xffff
+
+00006064 <test_6_res>:
+    6064:	ffff                	0xffff
+    6066:	ffff                	0xffff
+    6068:	ffff                	0xffff
+    606a:	ffff                	0xffff
+    606c:	ffff                	0xffff
+    606e:	ffff                	0xffff
+    6070:	ffff                	0xffff
+    6072:	ffff                	0xffff
+    6074:	ffff                	0xffff
+    6076:	ffff                	0xffff
+
+00006078 <test_7_res>:
+    6078:	ffff                	0xffff
+    607a:	ffff                	0xffff
+    607c:	ffff                	0xffff
+    607e:	ffff                	0xffff
+    6080:	ffff                	0xffff
+    6082:	ffff                	0xffff
+    6084:	ffff                	0xffff
+    6086:	ffff                	0xffff
+    6088:	ffff                	0xffff
+    608a:	ffff                	0xffff
+    608c:	0000                	unimp
+    608e:	0000                	unimp
+
+Disassembly of section .riscv.attributes:
+
+00000000 <.riscv.attributes>:
+   0:	1e41                	addi	t3,t3,-16
+   2:	0000                	unimp
+   4:	7200                	flw	fs0,32(a2)
+   6:	7369                	lui	t1,0xffffa
+   8:	01007663          	bgeu	zero,a6,14 <_start-0x1ec>
+   c:	0014                	0x14
+   e:	0000                	unimp
+  10:	7205                	lui	tp,0xfffe1
+  12:	3376                	fld	ft6,376(sp)
+  14:	6932                	flw	fs2,12(sp)
+  16:	7032                	flw	ft0,44(sp)
+  18:	5f30                	lw	a2,120(a4)
+  1a:	326d                	jal	fffff9c4 <_end+0xffff9934>
+  1c:	3070                	fld	fa2,224(s0)
+  1e:	00              	Address 0x000000000000001e is out of bounds.
+

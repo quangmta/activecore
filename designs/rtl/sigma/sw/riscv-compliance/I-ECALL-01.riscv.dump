@@ -1,0 +1,74 @@
+
+I-ECALL-01.riscv:     file format elf32-littleriscv
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text.init    00000054  00000200  00000200  00000200  2**4
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .io_buf       00000010  00006000  00006000  00001000  2**4
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  2 .riscv.attributes 00000023  00000000  00000000  00001010  2**0
+                  CONTENTS, READONLY
+
+Disassembly of section .text.init:
+
+00000200 <_start>:
+ 200:	00000097          	auipc	ra,0x0
+ 204:	02c08093          	addi	ra,ra,44 # 22c <_trap_handler>
+ 208:	30509ff3          	csrrw	t6,mtvec,ra
+ 20c:	00006097          	auipc	ra,0x6
+ 210:	df408093          	addi	ra,ra,-524 # 6000 <codasip_signature_start>
+ 214:	11111137          	lui	sp,0x11111
+ 218:	11110113          	addi	sp,sp,273 # 11111111 <_end+0x1110b101>
+ 21c:	00000073          	ecall
+ 220:	0000a023          	sw	zero,0(ra)
+ 224:	305f9073          	csrw	mtvec,t6
+ 228:	0280006f          	j	250 <halt>
+
+0000022c <_trap_handler>:
+ 22c:	34102f73          	csrr	t5,mepc
+ 230:	004f0f13          	addi	t5,t5,4
+ 234:	341f1073          	csrw	mepc,t5
+ 238:	34202f73          	csrr	t5,mcause
+ 23c:	01e0a023          	sw	t5,0(ra)
+ 240:	0020a223          	sw	sp,4(ra)
+ 244:	0000a423          	sw	zero,8(ra)
+ 248:	00c08093          	addi	ra,ra,12
+ 24c:	30200073          	mret
+
+00000250 <halt>:
+ 250:	0000006f          	j	250 <halt>
+
+Disassembly of section .io_buf:
+
+00006000 <codasip_signature_start>:
+    6000:	ffff                	0xffff
+    6002:	ffff                	0xffff
+    6004:	ffff                	0xffff
+    6006:	ffff                	0xffff
+    6008:	ffff                	0xffff
+    600a:	ffff                	0xffff
+    600c:	ffff                	0xffff
+    600e:	ffff                	0xffff
+
+Disassembly of section .riscv.attributes:
+
+00000000 <.riscv.attributes>:
+   0:	2241                	jal	180 <_start-0x80>
+   2:	0000                	unimp
+   4:	7200                	flw	fs0,32(a2)
+   6:	7369                	lui	t1,0xffffa
+   8:	01007663          	bgeu	zero,a6,14 <_start-0x1ec>
+   c:	0018                	0x18
+   e:	0000                	unimp
+  10:	7205                	lui	tp,0xfffe1
+  12:	3376                	fld	ft6,376(sp)
+  14:	6932                	flw	fs2,12(sp)
+  16:	7032                	flw	ft0,44(sp)
+  18:	5f30                	lw	a2,120(a4)
+  1a:	326d                	jal	fffff9c4 <_end+0xffff99b4>
+  1c:	3070                	fld	fa2,224(s0)
+  1e:	0800                	addi	s0,sp,16
+  20:	0a01                	addi	s4,s4,0
+  22:	0b              	Address 0x0000000000000022 is out of bounds.
+

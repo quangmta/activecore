@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Sep  7 17:19:17 2023
+# Process ID: 27516
+# Current directory: E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4_DDR
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent27892 E:\ITMO\Vivado\activecore\activecore-master\designs\rtl\sigma\syn\syn_1stage\NEXYS4_DDR\NEXYS4_DDR.xpr
+# Log file: E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4_DDR/vivado.log
+# Journal file: E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4_DDR\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4_DDR/NEXYS4_DDR.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4_DDR'
+INFO: [Project 1-313] Project file moved from 'C:/Users/anton/PROJECTS/activecore/designs/rtl/sigma/syn/syn_1stage/NEXYS4_DDR' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_1stage/sverilog/riscv_1stage.svh', nor could it be found using path 'C:/Users/anton/PROJECTS/activecore/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_1stage/sverilog/riscv_1stage.svh'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_1stage/sverilog/riscv_1stage.sv', nor could it be found using path 'C:/Users/anton/PROJECTS/activecore/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_1stage/sverilog/riscv_1stage.sv'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_5stage/sverilog/riscv_5stage.svh', nor could it be found using path 'C:/Users/anton/PROJECTS/activecore/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_5stage/sverilog/riscv_5stage.svh'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_6stage/sverilog/riscv_6stage.svh', nor could it be found using path 'C:/Users/anton/PROJECTS/activecore/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_6stage/sverilog/riscv_6stage.svh'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_2stage/sverilog/riscv_2stage.svh', nor could it be found using path 'C:/Users/anton/PROJECTS/activecore/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_2stage/sverilog/riscv_2stage.svh'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_3stage/sverilog/riscv_3stage.svh', nor could it be found using path 'C:/Users/anton/PROJECTS/activecore/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_3stage/sverilog/riscv_3stage.svh'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_4stage/sverilog/riscv_4stage.svh', nor could it be found using path 'C:/Users/anton/PROJECTS/activecore/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_4stage/sverilog/riscv_4stage.svh'.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-509] GeneratedRun file for 'synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'sys_clk_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'impl_1' not found
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4_DDR/NEXYS4_DDR.ip_user_files', nor could it be found using path 'C:/Users/anton/PROJECTS/activecore/designs/rtl/sigma/syn/syn_1stage/NEXYS4_DDR/NEXYS4_DDR.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 883.754 ; gain = 188.816
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 8
+[Thu Sep  7 17:22:29 2023] Launched sys_clk_synth_1...
+Run output will be captured here: E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4_DDR/NEXYS4_DDR.runs/sys_clk_synth_1/runme.log
+[Thu Sep  7 17:22:29 2023] Launched synth_1...
+Run output will be captured here: E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1/runme.log
+add_files -norecurse E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/sigma_tile/hw/coregen/riscv_1stage/sverilog/riscv_1stage.svh
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Sep  7 17:42:45 2023...

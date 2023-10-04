@@ -1,0 +1,55 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Sep  7 18:24:28 2023
+# Process ID: 8820
+# Current directory: E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4_DDR
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19060 E:\ITMO\Vivado\activecore\activecore-master\designs\rtl\sigma\syn\syn_1stage\NEXYS4_DDR\NEXYS4_DDR.xpr
+# Log file: E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4_DDR/vivado.log
+# Journal file: E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4_DDR\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4_DDR/NEXYS4_DDR.xpr
+update_compile_order -fileset sources_1update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+ereset_run synth_1
+s -of_objects  [get_files E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/sigma_tile/hw/coregen/riscv_1stage/sverilog/riscv_1stage.svh] -no_script -reset -force -quiet
+remove_files  E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/sigma_tile/hw/coregen/riscv_1stage/sverilog/riscv_1stage.svh
+launch_simulation
+close_project
+open_project E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/sigma/syn/syn_1stage/NEXYS4_DDR/NEXYS4_DDR.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_simulation
+set_property INCREMENTAL false [get_filesets sim_1]
+launch_simulation
+launch_simulation
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top NEXYS4_DDR [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top riscv_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_run impl_1

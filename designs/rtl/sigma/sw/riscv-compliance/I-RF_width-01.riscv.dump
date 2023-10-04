@@ -1,0 +1,275 @@
+
+I-RF_width-01.riscv:     file format elf32-littleriscv
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text.init    00000294  00000200  00000200  00000200  2**4
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .io_buf       00000080  00006000  00006000  00001000  2**4
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  2 .riscv.attributes 0000001f  00000000  00000000  00001080  2**0
+                  CONTENTS, READONLY
+
+Disassembly of section .text.init:
+
+00000200 <_start>:
+ 200:	00006817          	auipc	a6,0x6
+ 204:	e0080813          	addi	a6,a6,-512 # 6000 <codasip_signature_start>
+ 208:	00100013          	li	zero,1
+ 20c:	00100093          	li	ra,1
+ 210:	00100113          	li	sp,1
+ 214:	00100193          	li	gp,1
+ 218:	00100213          	li	tp,1
+ 21c:	00100293          	li	t0,1
+ 220:	00100313          	li	t1,1
+ 224:	00100393          	li	t2,1
+ 228:	00100413          	li	s0,1
+ 22c:	00100493          	li	s1,1
+ 230:	00100513          	li	a0,1
+ 234:	00100593          	li	a1,1
+ 238:	00100613          	li	a2,1
+ 23c:	00100693          	li	a3,1
+ 240:	00100713          	li	a4,1
+ 244:	00100793          	li	a5,1
+ 248:	01f09093          	slli	ra,ra,0x1f
+ 24c:	0000c463          	bltz	ra,254 <_start+0x54>
+ 250:	00000093          	li	ra,0
+ 254:	01f11113          	slli	sp,sp,0x1f
+ 258:	00014463          	bltz	sp,260 <_start+0x60>
+ 25c:	00000113          	li	sp,0
+ 260:	01f19193          	slli	gp,gp,0x1f
+ 264:	0001c463          	bltz	gp,26c <_start+0x6c>
+ 268:	00000193          	li	gp,0
+ 26c:	01f21213          	slli	tp,tp,0x1f
+ 270:	00024463          	bltz	tp,278 <_start+0x78>
+ 274:	00000213          	li	tp,0
+ 278:	01f29293          	slli	t0,t0,0x1f
+ 27c:	0002c463          	bltz	t0,284 <_start+0x84>
+ 280:	00000293          	li	t0,0
+ 284:	01f31313          	slli	t1,t1,0x1f
+ 288:	00034463          	bltz	t1,290 <_start+0x90>
+ 28c:	00000313          	li	t1,0
+ 290:	01f39393          	slli	t2,t2,0x1f
+ 294:	0003c463          	bltz	t2,29c <_start+0x9c>
+ 298:	00000393          	li	t2,0
+ 29c:	01f41413          	slli	s0,s0,0x1f
+ 2a0:	00044463          	bltz	s0,2a8 <_start+0xa8>
+ 2a4:	00000413          	li	s0,0
+ 2a8:	01f49493          	slli	s1,s1,0x1f
+ 2ac:	0004c463          	bltz	s1,2b4 <_start+0xb4>
+ 2b0:	00000493          	li	s1,0
+ 2b4:	01f51513          	slli	a0,a0,0x1f
+ 2b8:	00054463          	bltz	a0,2c0 <_start+0xc0>
+ 2bc:	00000513          	li	a0,0
+ 2c0:	01f59593          	slli	a1,a1,0x1f
+ 2c4:	0005c463          	bltz	a1,2cc <_start+0xcc>
+ 2c8:	00000593          	li	a1,0
+ 2cc:	01f61613          	slli	a2,a2,0x1f
+ 2d0:	00064463          	bltz	a2,2d8 <_start+0xd8>
+ 2d4:	00000613          	li	a2,0
+ 2d8:	01f69693          	slli	a3,a3,0x1f
+ 2dc:	0006c463          	bltz	a3,2e4 <_start+0xe4>
+ 2e0:	00000693          	li	a3,0
+ 2e4:	01f71713          	slli	a4,a4,0x1f
+ 2e8:	00074463          	bltz	a4,2f0 <_start+0xf0>
+ 2ec:	00000713          	li	a4,0
+ 2f0:	01f79793          	slli	a5,a5,0x1f
+ 2f4:	0007c463          	bltz	a5,2fc <_start+0xfc>
+ 2f8:	00000793          	li	a5,0
+ 2fc:	00082023          	sw	zero,0(a6)
+ 300:	00182223          	sw	ra,4(a6)
+ 304:	00282423          	sw	sp,8(a6)
+ 308:	00382623          	sw	gp,12(a6)
+ 30c:	00482823          	sw	tp,16(a6)
+ 310:	00582a23          	sw	t0,20(a6)
+ 314:	00682c23          	sw	t1,24(a6)
+ 318:	00782e23          	sw	t2,28(a6)
+ 31c:	02882023          	sw	s0,32(a6)
+ 320:	02982223          	sw	s1,36(a6)
+ 324:	02a82423          	sw	a0,40(a6)
+ 328:	02b82623          	sw	a1,44(a6)
+ 32c:	02c82823          	sw	a2,48(a6)
+ 330:	02d82a23          	sw	a3,52(a6)
+ 334:	02e82c23          	sw	a4,56(a6)
+ 338:	02f82e23          	sw	a5,60(a6)
+ 33c:	00006097          	auipc	ra,0x6
+ 340:	d0408093          	addi	ra,ra,-764 # 6040 <test_A2_res>
+ 344:	00100813          	li	a6,1
+ 348:	00100893          	li	a7,1
+ 34c:	00100913          	li	s2,1
+ 350:	00100993          	li	s3,1
+ 354:	00100a13          	li	s4,1
+ 358:	00100a93          	li	s5,1
+ 35c:	00100b13          	li	s6,1
+ 360:	00100b93          	li	s7,1
+ 364:	00100c13          	li	s8,1
+ 368:	00100c93          	li	s9,1
+ 36c:	00100d13          	li	s10,1
+ 370:	00100d93          	li	s11,1
+ 374:	00100e13          	li	t3,1
+ 378:	00100e93          	li	t4,1
+ 37c:	00100f13          	li	t5,1
+ 380:	00100f93          	li	t6,1
+ 384:	01f81813          	slli	a6,a6,0x1f
+ 388:	00084463          	bltz	a6,390 <_start+0x190>
+ 38c:	00000813          	li	a6,0
+ 390:	01f89893          	slli	a7,a7,0x1f
+ 394:	0008c463          	bltz	a7,39c <_start+0x19c>
+ 398:	00000893          	li	a7,0
+ 39c:	01f91913          	slli	s2,s2,0x1f
+ 3a0:	00094463          	bltz	s2,3a8 <_start+0x1a8>
+ 3a4:	00000913          	li	s2,0
+ 3a8:	01f99993          	slli	s3,s3,0x1f
+ 3ac:	0009c463          	bltz	s3,3b4 <_start+0x1b4>
+ 3b0:	00000993          	li	s3,0
+ 3b4:	01fa1a13          	slli	s4,s4,0x1f
+ 3b8:	000a4463          	bltz	s4,3c0 <_start+0x1c0>
+ 3bc:	00000a13          	li	s4,0
+ 3c0:	01fa9a93          	slli	s5,s5,0x1f
+ 3c4:	000ac463          	bltz	s5,3cc <_start+0x1cc>
+ 3c8:	00000a93          	li	s5,0
+ 3cc:	01fb1b13          	slli	s6,s6,0x1f
+ 3d0:	000b4463          	bltz	s6,3d8 <_start+0x1d8>
+ 3d4:	00000b13          	li	s6,0
+ 3d8:	01fb9b93          	slli	s7,s7,0x1f
+ 3dc:	000bc463          	bltz	s7,3e4 <_start+0x1e4>
+ 3e0:	00000b93          	li	s7,0
+ 3e4:	01fc1c13          	slli	s8,s8,0x1f
+ 3e8:	000c4463          	bltz	s8,3f0 <_start+0x1f0>
+ 3ec:	00000c13          	li	s8,0
+ 3f0:	01fc9c93          	slli	s9,s9,0x1f
+ 3f4:	000cc463          	bltz	s9,3fc <_start+0x1fc>
+ 3f8:	00000c93          	li	s9,0
+ 3fc:	01fd1d13          	slli	s10,s10,0x1f
+ 400:	000d4463          	bltz	s10,408 <_start+0x208>
+ 404:	00000d13          	li	s10,0
+ 408:	01fd9d93          	slli	s11,s11,0x1f
+ 40c:	000dc463          	bltz	s11,414 <_start+0x214>
+ 410:	00000d93          	li	s11,0
+ 414:	01fe1e13          	slli	t3,t3,0x1f
+ 418:	000e4463          	bltz	t3,420 <_start+0x220>
+ 41c:	00000e13          	li	t3,0
+ 420:	01fe9e93          	slli	t4,t4,0x1f
+ 424:	000ec463          	bltz	t4,42c <_start+0x22c>
+ 428:	00000e93          	li	t4,0
+ 42c:	01ff1f13          	slli	t5,t5,0x1f
+ 430:	000f4463          	bltz	t5,438 <_start+0x238>
+ 434:	00000f13          	li	t5,0
+ 438:	01ff9f93          	slli	t6,t6,0x1f
+ 43c:	000fc463          	bltz	t6,444 <_start+0x244>
+ 440:	00000f93          	li	t6,0
+ 444:	0100a023          	sw	a6,0(ra)
+ 448:	0110a223          	sw	a7,4(ra)
+ 44c:	0120a423          	sw	s2,8(ra)
+ 450:	0130a623          	sw	s3,12(ra)
+ 454:	0140a823          	sw	s4,16(ra)
+ 458:	0150aa23          	sw	s5,20(ra)
+ 45c:	0160ac23          	sw	s6,24(ra)
+ 460:	0170ae23          	sw	s7,28(ra)
+ 464:	0380a023          	sw	s8,32(ra)
+ 468:	0390a223          	sw	s9,36(ra)
+ 46c:	03a0a423          	sw	s10,40(ra)
+ 470:	03b0a623          	sw	s11,44(ra)
+ 474:	03c0a823          	sw	t3,48(ra)
+ 478:	03d0aa23          	sw	t4,52(ra)
+ 47c:	03e0ac23          	sw	t5,56(ra)
+ 480:	03f0ae23          	sw	t6,60(ra)
+
+00000484 <halt>:
+ 484:	0000006f          	j	484 <halt>
+ 488:	0000                	unimp
+ 48a:	0000                	unimp
+ 48c:	0000                	unimp
+ 48e:	0000                	unimp
+ 490:	0000                	unimp
+ 492:	0000                	unimp
+
+Disassembly of section .io_buf:
+
+00006000 <codasip_signature_start>:
+    6000:	ffff                	0xffff
+    6002:	ffff                	0xffff
+    6004:	ffff                	0xffff
+    6006:	ffff                	0xffff
+    6008:	ffff                	0xffff
+    600a:	ffff                	0xffff
+    600c:	ffff                	0xffff
+    600e:	ffff                	0xffff
+    6010:	ffff                	0xffff
+    6012:	ffff                	0xffff
+    6014:	ffff                	0xffff
+    6016:	ffff                	0xffff
+    6018:	ffff                	0xffff
+    601a:	ffff                	0xffff
+    601c:	ffff                	0xffff
+    601e:	ffff                	0xffff
+    6020:	ffff                	0xffff
+    6022:	ffff                	0xffff
+    6024:	ffff                	0xffff
+    6026:	ffff                	0xffff
+    6028:	ffff                	0xffff
+    602a:	ffff                	0xffff
+    602c:	ffff                	0xffff
+    602e:	ffff                	0xffff
+    6030:	ffff                	0xffff
+    6032:	ffff                	0xffff
+    6034:	ffff                	0xffff
+    6036:	ffff                	0xffff
+    6038:	ffff                	0xffff
+    603a:	ffff                	0xffff
+    603c:	ffff                	0xffff
+    603e:	ffff                	0xffff
+
+00006040 <test_A2_res>:
+    6040:	ffff                	0xffff
+    6042:	ffff                	0xffff
+    6044:	ffff                	0xffff
+    6046:	ffff                	0xffff
+    6048:	ffff                	0xffff
+    604a:	ffff                	0xffff
+    604c:	ffff                	0xffff
+    604e:	ffff                	0xffff
+    6050:	ffff                	0xffff
+    6052:	ffff                	0xffff
+    6054:	ffff                	0xffff
+    6056:	ffff                	0xffff
+    6058:	ffff                	0xffff
+    605a:	ffff                	0xffff
+    605c:	ffff                	0xffff
+    605e:	ffff                	0xffff
+    6060:	ffff                	0xffff
+    6062:	ffff                	0xffff
+    6064:	ffff                	0xffff
+    6066:	ffff                	0xffff
+    6068:	ffff                	0xffff
+    606a:	ffff                	0xffff
+    606c:	ffff                	0xffff
+    606e:	ffff                	0xffff
+    6070:	ffff                	0xffff
+    6072:	ffff                	0xffff
+    6074:	ffff                	0xffff
+    6076:	ffff                	0xffff
+    6078:	ffff                	0xffff
+    607a:	ffff                	0xffff
+    607c:	ffff                	0xffff
+    607e:	ffff                	0xffff
+
+Disassembly of section .riscv.attributes:
+
+00000000 <.riscv.attributes>:
+   0:	1e41                	addi	t3,t3,-16
+   2:	0000                	unimp
+   4:	7200                	flw	fs0,32(a2)
+   6:	7369                	lui	t1,0xffffa
+   8:	01007663          	bgeu	zero,a6,14 <_start-0x1ec>
+   c:	0014                	0x14
+   e:	0000                	unimp
+  10:	7205                	lui	tp,0xfffe1
+  12:	3376                	fld	ft6,376(sp)
+  14:	6932                	flw	fs2,12(sp)
+  16:	7032                	flw	ft0,44(sp)
+  18:	5f30                	lw	a2,120(a4)
+  1a:	326d                	jal	fffff9c4 <_end+0xffff9944>
+  1c:	3070                	fld	fa2,224(s0)
+  1e:	00              	Address 0x000000000000001e is out of bounds.
+

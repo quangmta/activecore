@@ -1,0 +1,145 @@
+
+I-RF_x0-01.riscv:     file format elf32-littleriscv
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text.init    00000100  00000200  00000200  00000200  2**4
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000004  00000300  00000300  00000300  2**4
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .io_buf       00000030  00006000  00006000  00001000  2**4
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  3 .riscv.attributes 0000001f  00000000  00000000  00001030  2**0
+                  CONTENTS, READONLY
+
+Disassembly of section .text.init:
+
+00000200 <_start>:
+ 200:	00006f97          	auipc	t6,0x6
+ 204:	e00f8f93          	addi	t6,t6,-512 # 6000 <codasip_signature_start>
+ 208:	abcde037          	lui	zero,0xabcde
+ 20c:	00100013          	li	zero,1
+ 210:	7f006013          	ori	zero,zero,2032
+ 214:	53f07013          	andi	zero,zero,1343
+ 218:	80304013          	xori	zero,zero,-2045
+ 21c:	00501013          	slli	zero,zero,0x5
+ 220:	40205013          	srai	zero,zero,0x2
+ 224:	00405013          	srli	zero,zero,0x4
+ 228:	000fa023          	sw	zero,0(t6)
+ 22c:	00006f97          	auipc	t6,0x6
+ 230:	dd8f8f93          	addi	t6,t6,-552 # 6004 <test_A2_res>
+ 234:	00100093          	li	ra,1
+ 238:	7f000113          	li	sp,2032
+ 23c:	53f00193          	li	gp,1343
+ 240:	80300213          	li	tp,-2045
+ 244:	00500293          	li	t0,5
+ 248:	00200313          	li	t1,2
+ 24c:	00400393          	li	t2,4
+ 250:	01800413          	li	s0,24
+ 254:	abcde017          	auipc	zero,0xabcde
+ 258:	00100033          	add	zero,zero,ra
+ 25c:	00206033          	or	zero,zero,sp
+ 260:	00307033          	and	zero,zero,gp
+ 264:	00404033          	xor	zero,zero,tp
+ 268:	00501033          	sll	zero,zero,t0
+ 26c:	40605033          	sra	zero,zero,t1
+ 270:	00705033          	srl	zero,zero,t2
+ 274:	40800033          	neg	zero,s0
+ 278:	000fa023          	sw	zero,0(t6)
+ 27c:	00006f97          	auipc	t6,0x6
+ 280:	d8cf8f93          	addi	t6,t6,-628 # 6008 <test_A3_res>
+ 284:	00100093          	li	ra,1
+ 288:	00200113          	li	sp,2
+ 28c:	0020a033          	slt	zero,ra,sp
+ 290:	000fa023          	sw	zero,0(t6)
+ 294:	0020b033          	sltu	zero,ra,sp
+ 298:	000fa223          	sw	zero,4(t6)
+ 29c:	0020a013          	slti	zero,ra,2
+ 2a0:	000fa423          	sw	zero,8(t6)
+ 2a4:	0020b013          	sltiu	zero,ra,2
+ 2a8:	000fa623          	sw	zero,12(t6)
+ 2ac:	00006f97          	auipc	t6,0x6
+ 2b0:	d6cf8f93          	addi	t6,t6,-660 # 6018 <test_A4_res>
+ 2b4:	0040006f          	j	2b8 <_start+0xb8>
+ 2b8:	000fa023          	sw	zero,0(t6)
+ 2bc:	00000097          	auipc	ra,0x0
+ 2c0:	00c08093          	addi	ra,ra,12 # 2c8 <_start+0xc8>
+ 2c4:	00008067          	ret
+ 2c8:	000fa223          	sw	zero,4(t6)
+ 2cc:	30000093          	li	ra,768
+ 2d0:	00006f97          	auipc	t6,0x6
+ 2d4:	d50f8f93          	addi	t6,t6,-688 # 6020 <test_A5_res>
+ 2d8:	0000a003          	lw	zero,0(ra)
+ 2dc:	000fa023          	sw	zero,0(t6)
+ 2e0:	00009003          	lh	zero,0(ra)
+ 2e4:	000fa223          	sw	zero,4(t6)
+ 2e8:	00008003          	lb	zero,0(ra)
+ 2ec:	000fa423          	sw	zero,8(t6)
+ 2f0:	0000c003          	lbu	zero,0(ra)
+ 2f4:	000fa623          	sw	zero,12(t6)
+
+000002f8 <halt>:
+ 2f8:	0000006f          	j	2f8 <halt>
+ 2fc:	0000                	unimp
+ 2fe:	0000                	unimp
+
+Disassembly of section .data:
+
+00000300 <test_A5_data>:
+ 300:	42524e4f          	fnmadd.d	ft8,ft4,ft5,fs0,rmm
+
+Disassembly of section .io_buf:
+
+00006000 <codasip_signature_start>:
+    6000:	ffff                	0xffff
+    6002:	ffff                	0xffff
+
+00006004 <test_A2_res>:
+    6004:	ffff                	0xffff
+    6006:	ffff                	0xffff
+
+00006008 <test_A3_res>:
+    6008:	ffff                	0xffff
+    600a:	ffff                	0xffff
+    600c:	ffff                	0xffff
+    600e:	ffff                	0xffff
+    6010:	ffff                	0xffff
+    6012:	ffff                	0xffff
+    6014:	ffff                	0xffff
+    6016:	ffff                	0xffff
+
+00006018 <test_A4_res>:
+    6018:	ffff                	0xffff
+    601a:	ffff                	0xffff
+    601c:	ffff                	0xffff
+    601e:	ffff                	0xffff
+
+00006020 <test_A5_res>:
+    6020:	ffff                	0xffff
+    6022:	ffff                	0xffff
+    6024:	ffff                	0xffff
+    6026:	ffff                	0xffff
+    6028:	ffff                	0xffff
+    602a:	ffff                	0xffff
+    602c:	ffff                	0xffff
+    602e:	ffff                	0xffff
+
+Disassembly of section .riscv.attributes:
+
+00000000 <.riscv.attributes>:
+   0:	1e41                	addi	t3,t3,-16
+   2:	0000                	unimp
+   4:	7200                	flw	fs0,32(a2)
+   6:	7369                	lui	t1,0xffffa
+   8:	01007663          	bgeu	zero,a6,14 <_start-0x1ec>
+   c:	0014                	0x14
+   e:	0000                	unimp
+  10:	7205                	lui	tp,0xfffe1
+  12:	3376                	fld	ft6,376(sp)
+  14:	6932                	flw	fs2,12(sp)
+  16:	7032                	flw	ft0,44(sp)
+  18:	5f30                	lw	a2,120(a4)
+  1a:	326d                	jal	fffff9c4 <_end+0xffff9994>
+  1c:	3070                	fld	fa2,224(s0)
+  1e:	00              	Address 0x000000000000001e is out of bounds.
+

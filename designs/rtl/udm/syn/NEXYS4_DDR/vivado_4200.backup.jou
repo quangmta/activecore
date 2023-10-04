@@ -1,0 +1,54 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Nov 27 01:52:44 2022
+# Process ID: 4200
+# Current directory: E:/ITMO/1-1/Architecture and hardware description languages/activecore/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10168 E:\ITMO\1-1\Architecture and hardware description languages\activecore\activecore-master\designs\rtl\udm\syn\NEXYS4_DDR\NEXYS4_DDR.xpr
+# Log file: E:/ITMO/1-1/Architecture and hardware description languages/activecore/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/vivado.log
+# Journal file: E:/ITMO/1-1/Architecture and hardware description languages/activecore/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/ITMO/1-1/Architecture and hardware description languages/activecore/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.xpr}
+close [ open {E:/ITMO/1-1/Architecture and hardware description languages/activecore/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/Pipelined.sv} w ]
+add_files {{E:/ITMO/1-1/Architecture and hardware description languages/activecore/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/Pipelined.sv}}
+launch_simulation
+open_wave_config {E:/ITMO/1-1/Architecture and hardware description languages/activecore/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/tb_behav.wcfg}
+source tb.tcl
+run all
+run all
+close_sim
+close_project
+open_project {E:/ITMO/1-1/Architecture and hardware description languages/activecore/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.xpr}
+launch_simulation
+open_wave_config {E:/ITMO/1-1/Architecture and hardware description languages/activecore/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/tb_behav.wcfg}
+source tb.tcl
+run all
+close_sim
+launch_simulation
+open_wave_config {E:/ITMO/1-1/Architecture and hardware description languages/activecore/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/tb_behav.wcfg}
+source tb.tcl
+run all
+close_sim
+launch_simulation
+open_wave_config {E:/ITMO/1-1/Architecture and hardware description languages/activecore/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/tb_behav.wcfg}
+source tb.tcl
+run all
+close_sim
+launch_simulation
+open_wave_config {E:/ITMO/1-1/Architecture and hardware description languages/activecore/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/tb_behav.wcfg}
+source tb.tcl
+run all
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config {E:/ITMO/1-1/Architecture and hardware description languages/activecore/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/tb_behav.wcfg}
+source tb.tcl
+run all
+close_sim
+launch_simulation
+open_wave_config {E:/ITMO/1-1/Architecture and hardware description languages/activecore/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/tb_behav.wcfg}
+source tb.tcl
+run all
+close_sim

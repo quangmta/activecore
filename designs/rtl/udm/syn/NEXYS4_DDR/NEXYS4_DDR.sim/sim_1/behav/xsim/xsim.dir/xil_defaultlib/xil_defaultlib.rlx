@@ -1,0 +1,24 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/ram/ram.v,1663586262,verilog,,E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/ram/ram_dual.v,,ram,,,../../../../NEXYS4_DDR.srcs/sources_1/ip/sys_clk,,,,,
+E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/ram/ram_dual.v,1663586262,verilog,,,,ram_dual,,,../../../../NEXYS4_DDR.srcs/sources_1/ip/sys_clk,,,,,
+E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/ram/ram_dual_memsplit.v,1663586262,verilog,,E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/ram/ram.v,,ram_dual_memsplit,,,../../../../NEXYS4_DDR.srcs/sources_1/ip/sys_clk,,,,,
+E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/reset_sync/reset_sync.v,1663586262,verilog,,E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/ram/ram_dual_memsplit.v,,reset_sync,,,../../../../NEXYS4_DDR.srcs/sources_1/ip/sys_clk,,,,,
+E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/udm/hw/uart_rx.v,1663586262,verilog,,E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/udm/hw/udm_controller.v,,uart_rx,,,../../../../NEXYS4_DDR.srcs/sources_1/ip/sys_clk,,,,,
+E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/udm/hw/uart_tx.v,1663586262,verilog,,E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/reset_sync/reset_sync.v,,uart_tx,,,../../../../NEXYS4_DDR.srcs/sources_1/ip/sys_clk,,,,,
+E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/udm/hw/udm.v,1663586262,verilog,,E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/udm/hw/uart_rx.v,,udm,,,../../../../NEXYS4_DDR.srcs/sources_1/ip/sys_clk,,,,,
+E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/udm/hw/udm_controller.v,1663586262,verilog,,E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/udm/hw/uart_tx.v,,udm_controller,,,../../../../NEXYS4_DDR.srcs/sources_1/ip/sys_clk,,,,,
+E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.ip_user_files/ip/sys_clk/sys_clk.v,1673294854,verilog,,,,sys_clk,,,../../../../NEXYS4_DDR.srcs/sources_1/ip/sys_clk,,,,,
+E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.ip_user_files/ip/sys_clk/sys_clk_clk_wiz.v,1673294854,verilog,,E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.ip_user_files/ip/sys_clk/sys_clk.v,,sys_clk_clk_wiz,,,../../../../NEXYS4_DDR.srcs/sources_1/ip/sys_clk,,,,,
+E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sim_1/new/msb_test.sv,1671039183,systemVerilog,,E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sim_1/new/test.sv,,,,,../../../../NEXYS4_DDR.srcs/sources_1/ip/sys_clk,,,,,
+E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sim_1/new/test.sv,1680539749,systemVerilog,,,,msb_test,,,../../../../NEXYS4_DDR.srcs/sources_1/ip/sys_clk,,,,,
+E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/Combinational.sv,1671022295,systemVerilog,,E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/Multi-cycle.sv,,msb_comb,,,../../../../NEXYS4_DDR.srcs/sources_1/ip/sys_clk,,,,,
+E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/Multi-cycle.sv,1670974815,systemVerilog,,E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/Pipelined.sv,,msb_multi,,,../../../../NEXYS4_DDR.srcs/sources_1/ip/sys_clk,,,,,
+E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/Pipelined.sv,1671016839,systemVerilog,,,,msb_pipeline,,,../../../../NEXYS4_DDR.srcs/sources_1/ip/sys_clk,,,,,
+E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/lsb.sv,1680539654,systemVerilog,,E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sim_1/new/msb_test.sv,,lsb_pipeline,,,../../../../NEXYS4_DDR.srcs/sources_1/ip/sys_clk,,,,,
+E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.sv,1673292221,systemVerilog,,,,MemSplit32;NEXYS4_DDR,,,../../../../NEXYS4_DDR.srcs/sources_1/ip/sys_clk,,,,,
+E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/udm/tb/tb.sv,1678881987,systemVerilog,,E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.sv,E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/udm/tb/udm.svh,tb,,,../../../../NEXYS4_DDR.srcs/sources_1/ip/sys_clk,,,,,
+E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/udm/tb/udm.svh,1663586262,verilog,,,,,,,,,,,,

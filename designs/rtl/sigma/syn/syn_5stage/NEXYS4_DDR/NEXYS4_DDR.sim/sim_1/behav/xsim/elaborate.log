@@ -1,0 +1,14 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto db908482450846a6b240e55f3ac5423d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot riscv_tb_behav xil_defaultlib.riscv_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <riscv_6stage> not found while processing module instance <genblk1.riscv> [E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/sigma_tile/hw/sigma_tile.sv:475]
+ERROR: [VRFC 10-2865] module 'udm(BUS_TIMEOUT=104857600,RTX_EXTERNAL_OVERRIDE="YES")' ignored due to previous errors [E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/udm/hw/udm.v:10]
+ERROR: [VRFC 10-2865] module 'irq_adapter_default' ignored due to previous errors [E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/sigma_tile/hw/irq_adapter.sv:10]
+ERROR: [VRFC 10-2865] module 'ram_dual_memsplit(init_type="elf",init_data="E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/sigma/sw/apps/sha256.riscv",adr_width=30,mem_size=8192,P1_FRAC="YES")' ignored due to previous errors [E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/ram/ram_dual_memsplit.v:1]
+ERROR: [VRFC 10-2865] module 'uart_rx(RTX_EXTERNAL_OVERRIDE="YES")' ignored due to previous errors [E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/udm/hw/uart_rx.v:10]
+ERROR: [VRFC 10-2865] module 'uart_tx(RTX_EXTERNAL_OVERRIDE="YES")' ignored due to previous errors [E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/udm/hw/uart_tx.v:10]
+ERROR: [VRFC 10-2865] module 'udm_controller(BUS_TIMEOUT=104857600)' ignored due to previous errors [E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/udm/hw/udm_controller.v:10]
+ERROR: [VRFC 10-2865] module 'ram_dual(init_type="elf",init_data="E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/sigma/sw/apps/sha256.riscv",adr_width=30,mem_size=8192)' ignored due to previous errors [E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/ram/ram_dual.v:1]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

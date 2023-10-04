@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Feb 27 13:16:46 2023
+# Process ID: 12164
+# Current directory: E:/ITMO/1-1/Architecture and hardware description languages/activecore/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17172 E:\ITMO\1-1\Architecture and hardware description languages\activecore\activecore-master\designs\rtl\udm\syn\NEXYS4_DDR\NEXYS4_DDR.xpr
+# Log file: E:/ITMO/1-1/Architecture and hardware description languages/activecore/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/vivado.log
+# Journal file: E:/ITMO/1-1/Architecture and hardware description languages/activecore/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/ITMO/1-1/Architecture and hardware description languages/activecore/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'E:/ITMO/1-1/Architecture and hardware description languages/activecore/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 807.227 ; gain = 193.965
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: [Netlist 29-17] Analyzing 54 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.149 . Memory (MB): peak = 1747.543 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.149 . Memory (MB): peak = 1747.543 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1747.543 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:30 ; elapsed = 00:00:24 . Memory (MB): peak = 1864.453 ; gain = 1007.766
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 27 16:09:45 2023...

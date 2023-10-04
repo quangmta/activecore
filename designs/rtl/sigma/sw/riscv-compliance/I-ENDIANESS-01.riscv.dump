@@ -1,0 +1,87 @@
+
+I-ENDIANESS-01.riscv:     file format elf32-littleriscv
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text.init    00000050  00000200  00000200  00000200  2**4
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000008  00000250  00000250  00000250  2**4
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .io_buf       00000020  00006000  00006000  00001000  2**4
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  3 .riscv.attributes 0000001f  00000000  00000000  00001020  2**0
+                  CONTENTS, READONLY
+
+Disassembly of section .text.init:
+
+00000200 <_start>:
+ 200:	25400813          	li	a6,596
+ 204:	00006897          	auipc	a7,0x6
+ 208:	dfc88893          	addi	a7,a7,-516 # 6000 <codasip_signature_start>
+ 20c:	00082083          	lw	ra,0(a6)
+ 210:	00085103          	lhu	sp,0(a6)
+ 214:	00285183          	lhu	gp,2(a6)
+ 218:	fff84203          	lbu	tp,-1(a6)
+ 21c:	00084283          	lbu	t0,0(a6)
+ 220:	00184303          	lbu	t1,1(a6)
+ 224:	00284383          	lbu	t2,2(a6)
+ 228:	00384403          	lbu	s0,3(a6)
+ 22c:	0018a023          	sw	ra,0(a7)
+ 230:	0028a223          	sw	sp,4(a7)
+ 234:	0038a423          	sw	gp,8(a7)
+ 238:	0048a623          	sw	tp,12(a7)
+ 23c:	0058a823          	sw	t0,16(a7)
+ 240:	0068aa23          	sw	t1,20(a7)
+ 244:	0078ac23          	sw	t2,24(a7)
+ 248:	0088ae23          	sw	s0,28(a7)
+
+0000024c <halt>:
+ 24c:	0000006f          	j	24c <halt>
+
+Disassembly of section .data:
+
+00000250 <test_A_data-0x4>:
+ 250:	89abcdef          	jal	s11,fffbc2ea <_end+0xfffb62ca>
+
+00000254 <test_A_data>:
+ 254:	01234567          	0x1234567
+
+Disassembly of section .io_buf:
+
+00006000 <codasip_signature_start>:
+    6000:	ffff                	0xffff
+    6002:	ffff                	0xffff
+    6004:	ffff                	0xffff
+    6006:	ffff                	0xffff
+    6008:	ffff                	0xffff
+    600a:	ffff                	0xffff
+    600c:	ffff                	0xffff
+    600e:	ffff                	0xffff
+    6010:	ffff                	0xffff
+    6012:	ffff                	0xffff
+    6014:	ffff                	0xffff
+    6016:	ffff                	0xffff
+    6018:	ffff                	0xffff
+    601a:	ffff                	0xffff
+    601c:	ffff                	0xffff
+    601e:	ffff                	0xffff
+
+Disassembly of section .riscv.attributes:
+
+00000000 <.riscv.attributes>:
+   0:	1e41                	addi	t3,t3,-16
+   2:	0000                	unimp
+   4:	7200                	flw	fs0,32(a2)
+   6:	7369                	lui	t1,0xffffa
+   8:	01007663          	bgeu	zero,a6,14 <_start-0x1ec>
+   c:	0014                	0x14
+   e:	0000                	unimp
+  10:	7205                	lui	tp,0xfffe1
+  12:	3376                	fld	ft6,376(sp)
+  14:	6932                	flw	fs2,12(sp)
+  16:	7032                	flw	ft0,44(sp)
+  18:	5f30                	lw	a2,120(a4)
+  1a:	326d                	jal	fffff9c4 <_end+0xffff99a4>
+  1c:	3070                	fld	fa2,224(s0)
+  1e:	00              	Address 0x000000000000001e is out of bounds.
+

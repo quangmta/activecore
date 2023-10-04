@@ -1,0 +1,3 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+$finish called at time : 44 ns : File "E:/ITMO/Vivado/activecore/activecore-master/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sim_1/new/test.sv" Line 40
